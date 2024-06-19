@@ -17,4 +17,4 @@ services:
       context: .
       dockerfile: Dockerfile-operacoes
     ports:
-      - "5000:5000"
+      - "50000:50000"
