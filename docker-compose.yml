@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: python calculadora.py
+    volumes:
+      - ./tests:/app/tests
+    environment:
+      - PYTHONUNBUFFERED=1
