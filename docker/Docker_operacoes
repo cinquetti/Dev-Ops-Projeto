@@ -1,0 +1,15 @@
+# Usar a imagem base do Python
+FROM python:3.9-slim
+
+# Definir o diretório de trabalho
+WORKDIR /app
+
+# Copiar o código fonte para o contêiner
+COPY operacoes.py .
+COPY requirements.txt .
+
+# Instalar as dependências
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Comando padrão para rodar o servidor de operações
+CMD ["python", "operacoes.py"]
