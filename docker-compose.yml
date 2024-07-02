@@ -15,6 +15,6 @@ services:
   operacoes:
     build:
       context: .
-      dockerfile: Dockerfile-operacoes
+      dockerfile: docker/Docker_operacoes
     ports:
       - "50000:50000"
